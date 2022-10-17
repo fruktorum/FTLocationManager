@@ -325,7 +325,7 @@ open class LocationPicker: UIViewController, UIGestureRecognizerDelegate {
     open var alternativeLocationIcon: UIImage? = nil
     
     /// The image of the pin showed in the center of map view. If this property is set, the `var pinColor` won't be adopted.
-    open var pinImage: UIImage? = UIImage(named: "PrayerMarkLocation")
+    open var pinImage: UIImage? = UIImage(named: "PinLocation")
     
     /// The size of the pin's shadow. Set this value to zero to hide the shadow. __Default__ is __`5`__
     open var pinShadowViewDiameter: CGFloat = 5
