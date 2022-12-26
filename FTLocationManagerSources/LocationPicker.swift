@@ -679,7 +679,7 @@ open class LocationPicker: UIViewController, UIGestureRecognizerDelegate {
     private func reverseGeocodeLocation(_ location: CLLocation, _ currentLocationState: Bool) {
         
         geocoder.cancelGeocode()
-        geocoder.reverseGeocodeLocation(location, completionHandler: { (placemarks, error) -> Void in
+        geocoder.reverseGeocodeLocation(location, preferredLocale: Locale.init(identifier: "en_US"), completionHandler: { (placemarks, error) -> Void in
             guard error == nil else {
                 print(error!)
                 return
