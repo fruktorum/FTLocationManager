@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "FTLocationManager"
-  spec.version      = "3.0.6"
+  spec.version      = "3.0.7"
   spec.summary      = "Access to field validation methods is open"
   spec.homepage     = "https://github.com/fruktorum/FTLocationManager.git"
   spec.license      = { :type => "MIT", :file => "LICENSE" }
