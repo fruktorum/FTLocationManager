@@ -47,6 +47,9 @@ open class LocationPicker: UIViewController, UIGestureRecognizerDelegate {
     
     // MARK: - Completion closures
     
+    /// TableViewSelect closure
+    open var didSelectRowClosure: (() -> Void)?
+    
     /// Current location allowed
     open var getCurrentLocationAllowed: ((LocationItem) -> Void)?
     
@@ -982,6 +985,7 @@ extension LocationPicker: UITableViewDelegate, UITableViewDataSource {
         tableView.deselectRow(at: indexPath, animated: true)
         searchBar.endEditing(true)
         longitudinalDistance = defaultLongitudinalDistance
+        didSelectRowClosure?()
         
         if indexPath.row == 0 {
             
