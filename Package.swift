@@ -2,14 +2,14 @@
 import PackageDescription
 
 let package = Package(
-    name: "FTLocationPicker",
+    name: "FTLocationManager",
     platforms: [
         .iOS(.v8)
     ],
     products: [
-        .library(name: "FTLocationPicker", targets: ["FTLocationPicker"])
+        .library(name: "FTLocationManager", targets: ["FTLocationManager"])
     ],
     targets: [
-        .target(name: "FTLocationPicker", dependencies: [], path: "./FTLocationManagerSources"),
+        .target(name: "FTLocationManager", dependencies: [], path: "./FTLocationManagerSources"),
     ]
 )
